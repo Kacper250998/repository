@@ -2,7 +2,6 @@
 #include "array.h"
 
 void menu(void){
-
     printf("\n1. Enter the values into array\n");
     printf("2. Display the content of the array\n");
     printf("3. Determine the maximum value\n");
