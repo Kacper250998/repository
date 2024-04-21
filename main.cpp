@@ -14,9 +14,20 @@ void menu(void){
 }
 
 int main() {
-    int array[SIZE] = {1, 2, 3, 4, 5, 6, 7, 8, 9,
-                       10,};
-    printf("Simple array...\n");
+
+   int array[SIZE];
+    int *temps;
+    int i;
+    temps = (int *) malloc( 10 * sizeof( int ) );
+    int * randomNums;
+
+    randomNums = (int *) malloc(SIZE * sizeof(int));
+
+    for (i = 0; i < SIZE; i++)
+    {
+        randomNums[i] = (rand() % 500) + 1;
+    }
+
 
     int option = 0;
 
@@ -56,4 +67,3 @@ int main() {
 
     return 0;
 }
-
